@@ -1,0 +1,18 @@
+ {
+  "bidder-instance": 1,
+  "kafka-publisher-instance": 1,
+  "bidder-port": 10001,
+  "message-redis": {
+    "host": "localhost",
+    "port": 6379
+  },
+
+  "query-redis": {
+    "host": "localhost",
+    "port": 6379
+  },
+  "ip-lib": "d:/ip-lib.csv",
+  "track-base-url": "http://60.205.84.68",
+  "winnotice-url": "http://60.205.84.68",
+  "kafka-rtb-topic": "flow_report"
+}

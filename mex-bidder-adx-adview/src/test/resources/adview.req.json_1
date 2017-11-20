@@ -1,0 +1,55 @@
+{
+    "id": "20170309-110000_bidreq_130-811-ghQK-13",
+    "imp": [
+        {
+            "id": "20170309-105959_reqimp_130-498-f73n-2118",
+            "banner": {
+                "w": 600,
+                "h": 600,
+                "pos": 1
+            },
+            "instl": 0,
+            "tagid": "",
+            "bidfloor": 2,
+            "bidfloorcur": "RMB"
+        }
+    ],
+    "app": {
+        "id": "42073d65f06046e1e8cdef38482a7821",
+        "name": "今目标Android",
+        "bundle": "com.zongyi.popstar2",
+        "ver": "3.8",
+        "paid": 0
+    },
+     "device": {
+            "ext": {
+                "uuid": "864230033402320",
+                "mac": "",
+                "androidId": "605796186f3a4e02"
+            },
+            "orientation": 0,
+            "macsha1": "13de61f544a45792c275b54fc969a0305cf169e7",
+            "os": "ios",
+            "sw": 1080,
+            "didmd5": "b0cedf04f487d3c283cde9b554d18f43",
+            "ip": "183.193.22.254",
+            "js": 1,
+            "language": "zh",
+            "macmd5": "3fd2a3f218a693e2cf4a676ca0cf4ff5",
+            "ua": "Mozilla/5.0(Linux;Android6.0;NEM-AL10Build/HONORNEM-AL10;wv)AppleWebKit/537.36(KHTML,likeGecko)Version/4.0Chrome/51.0.2704.81MobileSafari/537.36",
+            "devicetype": 2,
+            "carrier": "46000",
+            "osv": "6.0",
+            "dpidmd5": "e27c4c1242ccaae00ffe4e4ed309baad",
+            "sh": 1920,
+            "didsha1": "8dd5d3a533844c1fb0cc96a45f322fdc7fc138d3",
+            "model": "NEM-AL10",
+            "connectiontype": 2,
+            "make": "HUAWEI",
+            "dpidsha1": "87e88a27b99b39669972e1f67ea27e43aea274e2"
+        },
+    "user": {},
+    "at": 1
+}
+
+

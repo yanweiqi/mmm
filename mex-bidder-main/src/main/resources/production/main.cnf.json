@@ -1,0 +1,38 @@
+{
+  "bidder-instance": 8,
+  "kafka-publisher-instance": 2,
+  "bidder-port": 80,
+  "message-redis": {
+    "host": "172.17.0.139",
+    "port": 6378,
+    "auth": "proddspredis"
+  },
+  "query-redis": {
+    "host": "172.17.0.138",
+    "port": 6379,
+    "auth": "proddspredis"
+  },
+  "kafka-cnf": {
+    "serializer.class": "org.apache.kafka.common.serialization.StringSerializer",
+    "bootstrap.servers": "172.17.0.43:9092,172.17.0.44:9092,172.17.0.45:9092,172.17.0.46:9092,172.17.0.47:9092,172.17.0.48:9092",
+    "producer.type": "async"
+  },
+  "ip-lib": "/data/app/dsp-bidder/ip-lib.csv",
+  "track-base-url": "dsptrack.ad-mex.com",
+  "winnotice-url": "dsptrack.ad-mex.com",
+  "kafka-rtb-topic": "dspx_flow",
+  "new-producer-topics": {
+    "bid-request-topic": "bid_request",
+    "bid-response-topic": "bid_response"
+  },
+  "dmp": {
+    "getui": {
+      "userCode": "mobiex",
+      "authCode": "Pws3gSZ1f69GuWTDmdd4p1",
+      "host": "dmp-bj.abeacon.com",
+      "port": 80,
+      "timeout": 20,
+      "maxPoolSize":20
+    }
+  }
+}

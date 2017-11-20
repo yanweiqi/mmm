@@ -1,0 +1,59 @@
+{
+  "bidid": "4410_1460105724180_42492",
+  "cur": "RMB",
+  "id": "20160408-165435_bidreq_165-3960-NwVU-1886",
+  "seatbid": [
+    {
+      "bid": [
+        {
+          "adct": 0,
+          "adid": "4410",
+          "admt": 8,
+          "adtm": 0,
+          "adurl": "http://...?rqid=20160408-165435_bidreq_165-3960-NwVU-1886&extdata=fGlzUE1QPTB8Yz0yOTk0NnxndWlkPWZhZDQyZjE3NDNlMDJiZmE1NWRlOWVkNzE3ZDM2YWZhMDlhNGI4NjZ8QXByPTQ0MTB8QXNjPTQyNDkyfEFzcD1mNTZhNTcxMjcxZTE5MDA1MzIzOGQ3MmM3NzEwMmRhMV8xNTBfMTUwfGhzY29kZT0xMDUxMDk2OTUwfERvbWFpbj13d3cuYWR2aWV3LmNufElwPTExNS4yMTMuODYuMzB8Q2hhbm5lbElkPTEwNDA=&isJamp=1&JampUrl=http%3A%2F%2Fm.duobao999.com%2F%3Fchannel_id%3D59a9%26zcid%3D01D20B9931C38B142D06B8825CEB082A73B27E71ABB116BF",
+          "cid": "29946",
+          "curl": [
+            "clkurl1",
+            "curl2"
+          ],
+          "impid": "20160408-165435_reqimp_165-3960-1JmF-1885",
+          "native": {
+            "assets": [
+              {
+                "id": 1,
+                "img": {
+                  "h": 150,
+                  "url": "http://.../20160408/33d55be748a35b2b60920a794285948d.jpg",
+                  "w": 150
+                }
+              },
+              {
+                "id": 2,
+                "title": {
+                  "text": "1元抢MacBook！现货保证 ！"
+                }
+              },
+              {
+                "data": {
+                  "label": "desc",
+                  "value": "1元抢MacBook！现货保证！"
+                },
+                "id": 3
+              }
+            ],
+            "ver": "1"
+          },
+          "nurl": {
+            "0": [
+              "http://...?rqid=20160408-165435_bidreq_165-3960-NwVU-1886&extdata=fGlzUE1QPTB8Yz0yOTk0NnxndWlkPWZhZDQyZjE3NDNlMDJiZmE1NWRlOWVkNzE3ZDM2YWZhMDlhNGI4NjZ8QXByPTQ0MTB8QXNjPTQyNDkyfEFzcD1mNTZhNTcxMjcxZTE5MDA1MzIzOGQ3MmM3NzEwMmRhMV8xNTBfMTUwfGhzY29kZT0xMDUxMDk2OTUwfERvbWFpbj13d3cuYWR2aWV3LmNufElwPTExNS4yMTMuODYuMzB8Q2hhbm5lbElkPTEwNDA=&rqp=%%WIN_PRICE%%"
+            ]
+          },
+          "paymode": 1,
+          "price": 68500,
+          "wurl": "http://...?rqid=20160408-165435_bidreq_165-3960-NwVU-1886&extdata=fGlzUE1QPTB8Yz0yOTk0NnxndWlkPWZhZDQyZjE3NDNlMDJiZmE1NWRlOWVkNzE3ZDM2YWZhMDlhNGI4NjZ8QXByPTQ0MTB8QXNjPTQyNDkyfEFzcD1mNTZhNTcxMjcxZTE5MDA1MzIzOGQ3MmM3NzEwMmRhMV8xNTBfMTUwfGhzY29kZT0xMDUxMDk2OTUwfERvbWFpbj13d3cuYWR2aWV3LmNufElwPTExNS4yMTMuODYuMzB8Q2hhbm5lbElkPTEwNDA=&rqp=%%WIN_PRICE%%"
+        }
+      ],
+      "seat": "4410_1460105724180_42492_29946"
+    }
+  ]
+}

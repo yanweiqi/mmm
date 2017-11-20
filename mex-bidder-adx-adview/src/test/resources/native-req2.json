@@ -1,0 +1,94 @@
+{
+  "app": {
+    "ext": {
+      "appsecret": "",
+      "appkey": ""
+    },
+    "ver": "1.0",
+    "cat": [
+      10301
+    ],
+    "name": "测试测试测试",
+    "paid": 0,
+    "id": "337445519afb49947d52e18d8074c444",
+    "bundle": "com.kyview.testdemo"
+  },
+  "at": 1,
+  "id": "20170427-154208_bidreq_204-2823-oQFP-5",
+  "imp": [
+    {
+      "native": {
+        "request": {
+          "ver": "1.0",
+          "layout": 6,
+          "assets": [
+            {
+              "id": 1,
+              "title": {
+                "len": 200
+              },
+              "required": 1
+            },
+            {
+              "data": {
+                "len": 20,
+                "type": 2
+              },
+              "id": 2,
+              "required": 1
+            },
+            {
+              "img": {
+                "w": 150,
+                "h": 150,
+                "hmin": 0,
+                "wmin": 0,
+                "type": 1,
+                "mimes": [
+                  "image\/png"
+                ]
+              },
+              "id": 3,
+              "required": 1
+            }
+          ],
+          "adunit": 4
+        },
+        "ver": "1.0"
+      },
+      "tagid": "NATIVEgy2d6gpaojv1",
+      "bidfloor": 10000,
+      "bidfloorcur": "RMB",
+      "id": "20170427-154208_reqimpNATIVEgy2d6gpaojv1_204-2822-YcQ1-4",
+      "instl": 6
+    }
+  ],
+  "device": {
+    "orientation": 0,
+    "os": "Android",
+    "sw": 1080,
+    "didmd5": "0123303e606a84f694181782f82d94d9",
+    "ip": "221.220.250.181",
+    "js": 1,
+    "language": "zh",
+    "ua": "Mozilla\/5.0(Linux;Android5.1;PRO5Build\/LMY47D)AppleWebKit\/537.36(KHTML,likeGecko)Version\/4.0Chrome\/40.0.2214.127MobileSafari\/537.36",
+    "devicetype": 2,
+    "geo": {
+      "lon": 116.474133,
+      "type": 1,
+      "lat": 39.995836
+    },
+    "carrier": "46001",
+    "osv": "5.1",
+    "dpidmd5": "574b6f08f4832155a2838f3e239085b4",
+    "sh": 1920,
+    "didsha1": "7d3d96ac26d2dadcb4dbedd32f683912f2686369",
+    "model": "PRO5",
+    "connectiontype": 2,
+    "make": "Meizu",
+    "dpidsha1": "42407fcffbe17d43bfe3bb64cf3d2b2801b7d25d"
+  },
+  "user": {
+    "gender": "Null"
+  }
+}

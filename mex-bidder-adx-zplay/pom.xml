@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>mex-bidder</artifactId>
+        <groupId>mex-bidder</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>mex-bidder-adx-zplay</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>${protobufVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>mex-bidder</groupId>
+            <artifactId>mex-bidder-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <source>${protobufGenerated}</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>full</id>
+            <activation>
+                <property>
+                    <!--
+                      For Eclipse IDE users with m2e-generated projects: Ignore all this stuff.
+                      M2E is incompatible with some plugins. You need to make a full build
+                      (mvn install) before loading the IDE, so protoc-generated code will exist.
+                    -->
+                    <name>!m2e.version</name>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+
+                    <plugin>
+                        <!--
+                          Protocol Buffers don't provide an (official) Maven plugin for protoc.
+                          Several third-party options for this are available for this, see:
+                          https://code.google.com/p/protobuf/wiki/ThirdPartyAddOns
+                          But you can just use the mavn-antrun-plugin and build-helper-maven-plugin.
+                         -->
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <executions>
+
+                            <execution>
+                                <id>compile-protoc</id>
+                                <phase>generate-sources</phase>
+                                <configuration>
+                                    <target>
+                                        <mkdir dir="${protobufGenerated}"/>
+                                        <path id="proto.path">
+                                            <fileset dir="${protobufSource}">
+                                                <include name="**/zplay_adx_rtb.proto"/>
+                                            </fileset>
+                                        </path>
+                                        <pathconvert pathsep=" " property="proto.files" refid="proto.path"/>
+                                        <exec executable="protoc" failonerror="true">
+                                            <arg value="--java_out=${protobufGenerated}"/>
+                                            <arg value="-I${protobufSource}"/>
+                                            <arg value="-I${protobufGenerated}/include"/>
+                                            <arg line="${proto.files}"/>
+                                        </exec>
+                                    </target>
+                                </configuration>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

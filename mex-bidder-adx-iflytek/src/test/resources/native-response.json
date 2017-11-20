@@ -1,0 +1,27 @@
+{
+  "id": "c9f323bf-b87b-4aa1-8bdd-6262d8c9539b",
+  "seatbid": [
+    {
+      "bid": [
+        {
+          "id": "c9f323bf-b87b-4aa1-8bdd-6262d8c9539b",
+          "impid": "9f06a56f-2248-4834-978e-770bd5cc8ecd",
+          "price": 0.11,
+          "nurl": "http://dsp.xxx.com/win_notice?price=${AUCTION_PRICE}",
+          "native_ad": {
+            "title": "讯飞移动广告平台",
+            "desc": "语音交互与广告深度融合，为移动营销提供全新的解决方案",
+            "img": "http://voiceads.cn/img/intro/banner/banner1.png",
+            "landing": "http://www.voiceads.cn",
+            "imptrackers": [
+              "http://imp.voiceads.cn/id=1"
+            ],
+            "clicktrackers": [
+              "http://click.voiceads.cn/id=a307ed"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

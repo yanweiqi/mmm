@@ -1,0 +1,47 @@
+{
+  "id": "0bts0B1CMf2R43Vd873UcMC705VRrv",
+  "seatbid": [
+    {
+      "bid": [
+        {
+          "id": "0bts0B1CMf2R43Vd873UcMC705VRrv",
+          "adid": "2017030911271377610",
+          "impid": "zapdd13a671432d4a653e372fa03b3c68971f788a12",
+          "price": 1000,
+          "AdmOneof": {
+            "AdmNative": {
+              "assets": [
+                {
+                  "id": 0,
+                  "img": {
+                    "url": "http://img.momocdn.com/ad/F4/17/F417956B-85EF-4CA2-A033-EA8FF0897B54_L.jpg"
+                  }
+                },
+                {
+                  "id": 1,
+                  "title": {
+                    "text": "掌游天下落地页"
+                  }
+                }
+              ],
+              "link": {
+                "url": "http://www.baidu.com"
+              }
+            }
+          },
+          "ext": {
+            "action": 1,
+            "imptrackers": [
+              "http://test.openad.immomo.com/dsp/zplay/display?tid=0bts0B1C703Hy7Db8DW7Iz8tcp-5SEntL-ansRbe2UqKcPDg7IYFd8s"
+            ],
+            "clktrackers": [
+              "http://test.openad.immomo.com/dsp/zplay/click?tid_PkEvBy4_DRRyZSWEcd6vhogizqCBoLUBPegSZW-rOyicZKz77x-zIgV"
+            ],
+            "inventory_type": 6
+          },
+          "nurl": "http://test.openad.immomo.com/dsp/zplay/win?tid=0bts0B1CMf2R43Vd873UE3HvFKz77x-zIgV&price={AUCTION_BID_PRICE}"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "adsview": {
+    "netid": "004",
+    "type": "json",
+    "ischeck": false,
+    "currency": "RMB",
+    "isMuchUrl": true,
+    "priceMacro": "%%WIN_PRICE%%"
+  },
+  "adstencent": {
+    "netid": "029",
+    "type": "proto",
+    "ischeck": true,
+    "currency": "RMB",
+    "isMuchUrl": false
+  },
+  "adssina": {
+    "netid": "030",
+    "type": "json",
+    "ischeck": true,
+    "currency": "RMB",
+    "isMuchUrl": true,
+    "priceMacro": "${AUCTION_PRICE}",
+    "0": {
+      "src": [
+        "${IMAGE_SRC}",
+        "${TITLE}"
+      ],
+      "type": [
+        "image",
+        "alt"
+      ],
+      "link": [
+        "${CLICK_TRACK_URL}"
+      ],
+      "pv": [
+        "${MEX_IMP_TRACK}",
+        "${THIRD_IMP_TRACK}"
+      ]
+    },
+    "6": "",
+    "4": "",
+    "2": ""
+  },
+  "adspcautowap": {
+    "netid": "028",
+    "type": "json",
+    "ischeck": false,
+    "currency": "RMB",
+    "isMuchUrl": false
+  },
+  "adspcautoapp": {
+    "netid": "027",
+    "type": "json",
+    "ischeck": false,
+    "currency": "RMB",
+    "isMuchUrl": false,
+    "0": "<a href=\"http://baidu.com\">test</a>",
+    "6": "<a href=\"http://baidu.com\">test</a>",
+    "4": "<a href=\"http://baidu.com\">test</a>",
+    "2": "<a href=\"http://baidu.com\">test</a>"
+  },
+  "adszp": {
+    "netid": "018",
+    "type": "proto",
+    "ischeck": false,
+    "currency": "RMB",
+    "isMuchUrl": false,
+    "priceMacro": "{AUCTION_BID_PRICE}",
+    "0": "",
+    "6": "",
+    "4": "",
+    "2": "<?xml version=\"1.0\" encoding=\"utf-8\" ?><VAST version=\"2.0\"><Ad id=\"${CREATIVE_ID}\"><InLine><AdSystem version=\"1.0\">MEX</AdSystem><AdTitle>${TITLE}</AdTitle><Impression>${VIDEO_SRC}</Impression><Creatives><Creative sequence=\"1\" id=\"1\"><Linear><Duration>${VIDEO_DATE}</Duration><TrackingEvents><Tracking event=\"start\"></Tracking><Tracking event=\"complete\" id=\"1\">${MEX_IMP_TRACK}</Tracking><Tracking event=\"complete\" id=\"2\">${THIRD_IMP_TRACK}</Tracking></TrackingEvents></Linear></Creative></Creatives></InLine></Ad></VAST>"
+  },
+  "adsiflytek": {
+    "netid": "025",
+    "type": "json",
+    "ischeck": false,
+    "currency": "RMB",
+    "isMuchUrl": true,
+    "priceMacro": "${AUCTION_PRICE}",
+    "0": "",
+    "6": "",
+    "4": "",
+    "2": ""
+  },
+  "adsautohome": {
+    "netid": "022",
+    "type": "proto",
+    "ischeck": false,
+    "currency": "RMB",
+    "isMuchUrl": true,
+    "priceMacro": "%%WINNING_PRICE%%"
+  }
+}

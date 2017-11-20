@@ -1,0 +1,96 @@
+{
+  "id": "0bts0B1D6vlG0yafzh10dx0z0yKoui",
+  "imp": [
+    {
+      "id": "1",
+      "banner": {
+        "w": 1024,
+        "h": 720,
+        "pos": 0
+      },
+      "native": {
+        "request": {
+          "native": {
+            "layout": 6,
+            "assets": [
+              {
+                "id": 1,
+                "required": 1,
+                "title": {
+                  "len": 70
+                }
+              },
+              {
+                "id": 2,
+                "required": 1,
+                "img": {
+                  "type": 3,
+                  "w": 120,
+                  "h": 80
+                }
+              },
+              {
+                "id": 3,
+                "required": 1,
+                "data": {
+                  "type": 2,
+                  "len": 280
+                }
+              }
+            ]
+          }
+        }
+      },
+      "tagid": "search_list",
+      "bidfloor": 0.1,
+      "bidfloorcur": "CNY"
+    }
+  ],
+  "app": {
+    "id": "10173001",
+    "name": "百合婚恋",
+    "bundle": "com.baihe",
+    "ver": "7.1.1"
+  },
+  "device": {
+    "ua": "Apache-HttpClient/UNAVAILABLE (java 1.4)",
+    "geo": {
+      "lat": 40.265925,
+      "lon": 116.27248,
+      "type": 2,
+      "country": "CHN",
+      "region": "湖北",
+      "city": "襄阳"
+    },
+    "dnt": 0,
+    "ip": "117.152.54.105",
+    "devicetype": 4,
+    "make": "HUAWEI",
+    "model": "PLK-TL01H",
+    "os": "android",
+    "osv": "6.0",
+    "w": 1080,
+    "h": 1812,
+    "ppi": 0,
+    "carrier": "46000",
+    "connectiontype": 2,
+    "didsha1": "8055b97fa034a47cf3b8e8c5db52f53b9583218f",
+    "didmd5": "15b5f3088d7f53238e339b23ef9c3dd6",
+    "dpidsha1": "b8192dd50aa59db1a4f816337bb24bf04e8da0c3",
+    "dpidmd5": "d41d8cd98f00b204e9800998ecf8427e",
+    "macsha1": "0d5487ecbd4cafeb1a3da21634a3723f61b3a1e3",
+    "macmd5": "4321c7e2cfbe462f502f8bf1f94916cd",
+    "imei": "867628024632234",
+    "mac": "a0:8d:16:91:4e:b2",
+    "androidId": "835c92c8c292ad38",
+    "idfa": ""
+  },
+  "user": {
+    "yob": 1985,
+    "gender": "M",
+    "keywords": "旅游|游泳|跑步|爬山|自驾游,离异,20000-25000,已购房(无贷款),本科"
+  },
+  "netname": "adszp",
+  "logtime": "2017-05-05 13:00:12.533",
+  "logtype": "request"
+}

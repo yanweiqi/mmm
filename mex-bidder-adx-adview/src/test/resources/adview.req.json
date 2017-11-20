@@ -1,0 +1,61 @@
+{
+  "app": {
+    "ext": {
+      "appsecret": "",
+      "appkey": ""
+    },
+    "ver": "1.1.3",
+    "storeurl": "https:\/\/itunes.apple.com\/cn\/app\/mian-fei-kan-shu-jing-xuan\/id694544452?mt=8",
+    "cat": [
+      10801
+    ],
+    "name": "免费看书-插屏",
+    "paid": 0,
+    "id": "a153c356cd65e56453a09897487b7c47",
+    "bundle": "com.imangi.templerun2.cn"
+  },
+  "at": 1,
+  "id": "mex1111",
+  "imp": [
+    {
+      "tagid": "",
+      "banner": {
+        "pos": 1,
+        "w": 480,
+        "h": 75
+      },
+      "bidfloor": 0,
+      "bidfloorcur": "RMB",
+      "id": "20170628-142126_reqimp_133-629-t8yn-359",
+      "instl": 1
+    }
+  ],
+  "device": {
+    "ext": {
+      "idfa": "212312312111312311"
+    },
+    "orientation": 0,
+    "os": "android",
+    "sw": 1536,
+    "ip": "114.85.57.245",
+    "idfa": "212312312111312311",
+    "js": 1,
+    "language": "zh",
+    "ua": "Mozilla\/5.0(iPad;CPUOS10_2likeMacOSX)AppleWebKit\/602.3.12(KHTML,likeGecko)Mobile\/14C92",
+    "devicetype": 3,
+    "geo": {
+      "country": "CHN"
+    },
+    "carrier": "",
+    "osv": "10.2",
+    "dpidmd5": "f4bfada70cb294df237125dba6ae0840",
+    "sh": 2048,
+    "model": "iPad5,3",
+    "connectiontype": 2,
+    "make": "APPLE",
+    "dpidsha1": "3d9dc4971c2fd60e1c049cc0380fa9b16c0fecb7"
+  },
+  "user": {
+    "gender": "Null"
+  }
+}

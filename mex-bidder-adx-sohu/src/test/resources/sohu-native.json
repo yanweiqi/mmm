@@ -1,0 +1,39 @@
+version: 1
+bidid: "c72d35c184634d2eb325e39c3913ca6d"
+isTest: 0
+site {
+name: "SOHU_NEWS_APP"
+page: ""
+category: 0
+ref: ""
+}
+device {
+type: "Mobile"
+ip: "10.2.11.45"
+ua: "864595024092797|UNKNOWN|68:df:dd:a0:83:55||Android5.1.0"
+carrier: ""
+netType: ""
+screenWidth: 640
+screenHeight: 320
+}
+user {
+suid: "9505051731405358"
+version: 1
+yyid: ""
+fyid: ""
+}
+impression {
+idx: 0
+pid: "12232"
+bidFloor: 17
+banner {
+mimes: 1
+mimes: 2
+mimes: 3
+width: 640
+height: 320
+template: "picturetxt"
+}
+screenLocation: FIRSTVIEW
+isPreferredDeals: false
+}

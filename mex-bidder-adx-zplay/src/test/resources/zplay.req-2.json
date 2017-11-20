@@ -1,0 +1,71 @@
+{
+  "id": "test123",
+  "imp": [
+    {
+      "id": "1",
+      "banner": {
+        "w": 300,
+        "h": 250,
+        "pos": 0
+      },
+      "instl": false,
+      "tagid": "zapdaf80f283052910007a6bf88c7cda433c35f1ca4",
+      "bidfloor": 0,
+      "bidfloorcur": "CNY",
+      "ext": {
+        "inventory_types": [
+          1,
+          2,
+          4,
+          5
+        ]
+      }
+    }
+  ],
+  "app": {
+    "id": "1000305",
+    "name": "ios-官方正版-AS-iphone",
+    "ver": "4.4.7",
+    "bundle": "com.zplay.popstar"
+  },
+  "device": {
+    "dnt": false,
+    "ua": "PopStar!/4.4.71CFNetwork/711.2.23Darwin/14.0.0",
+    "ip": "211.161.240.248",
+    "geo": {
+      "lat": "40.2658100000",
+      "lon": "116.1152900000",
+      "country": "CHN",
+      "region": "上海",
+      "city": "上海",
+      "type": 2
+    },
+    "didsha1": "",
+    "didsha1": "",
+    "dpidsha1": "c637c2f383d5e4703a10bd0d6c2de70b3bd4c27eteset",
+    "make": "Apple",
+    "model": "iPhone5,4",
+    "os": "ios",
+    "osv": "8.2",
+    "w": 320,
+    "h": 50,
+    "ppi": 2,
+    "pxratio": 2,
+    "connectiontype": 2,
+    "devicetype": 4,
+    "macsha1": "c1976429369bfe063ed8b3409db7c7e7d87196d9test",
+    "ext": {
+      "plmn": "46003",
+      "imei": "1212",
+      "imsi": "1212e",
+      "mac": "02:22:00:00:00:11",
+      "android_id": "D0C8EA88-7A22-483F-B9B8-EB8465D133BD",
+      "adid": "EBA0BC21-5DC6-4B28-8150-F3569B89C5CFtest",
+      "orientation": 1
+    }
+  },
+  "ext": {
+    "version": 1,
+    "need_https": false
+  }
+}

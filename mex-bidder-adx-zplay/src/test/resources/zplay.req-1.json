@@ -1,0 +1,41 @@
+{
+  "app":{
+    "cat":[
+      "IAB1"
+    ],
+    "name":"AD_Demo",
+    "id":"574e7ecf",
+    "bundle":"com.iflytek.AD"
+  },
+  "id":"0f306eb7-0843-4b2c-8c56-e09ddf7ad510-1484213527895",
+  "imp":[
+    {
+      "tagid":"49C7CEFA013014EFC79BF5A8D7DDCF94",
+      "banner":{
+        "w":640,
+        "h":100
+      },
+      "bidfloor":0,
+      "id":"2c5055e3-a4e7-4141-a12a-a7fcf39a258e",
+      "secure":0,
+      "instl":1
+    }
+  ],
+  "device":{
+    "os":"Android",
+    "ifa":"4EEC4AF1-B38F-4583-92A2-9CA36F265071",
+    "ip":"119.57.32.71",
+    "h":800,
+    "language":"zh_CN",
+    "ua":"Mozilla/5.0 (iPhone; CPU iPhone OS 8_2 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Mobile/12D508",
+    "devicetype":1,
+    "carrier":"46000",
+    "osv":"8.2",
+    "dpidmd5":"ab80cea0ccd54b269d75fd292e82fab7",
+    "w":480,
+    "model":"iPhone5,3",
+    "connectiontype":2,
+    "make":"Apple",
+    "dpidsha1":"e08ef7c3f8e4ad22fed7a4384dc048858f3a59ed"
+  }
+}

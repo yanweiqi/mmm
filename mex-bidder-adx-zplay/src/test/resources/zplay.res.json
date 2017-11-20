@@ -1,0 +1,31 @@
+{
+  "id": "9778c264ec15469e93308a901eea5df8",
+  "seatbid": [
+    {
+      "bid": [
+        {
+          "id": "1",
+          "impid": "1",
+          "price": 2000,
+          "adid": "ad5-6421",
+          "AdmOneof": null,
+          "iurl": "http://www.zplay.com/ad.jpg&dsp=5",
+          "ext": {
+            "imptrackers": [
+              "http://www.zplay.com/it?p={AUCTION_BID_PRICE}&id={AUCTION_BID_ID}&dsp=5"
+            ],
+            "clktrackers": [
+              "http://www.zplay.com/ct?p={AUCTION_BID_PRICE}&id={AUCTION_BID_ID}&dsp=5"
+            ],
+            "clkurl": "http://www.zplay.com/click?p={AUCTION_BID_PRICE}&id={AUCTION_BID_ID}&dsp=5",
+            "inventory_type": 2,
+            "title": "MMR",
+            "desc": "GEhIT0BkO0swcwMUeajjKEM1am7FPK7muqE85yQINij7R9CFSJWGHxPd7nV7ouwy2fXKj04cY55qLDcB4CC8vmvdrkuvPdMPNzvpUMj3umFVKU1oV9FUcUG15z2TlJomisIlr7LttkU6bdyBLGduOBCFaF8Lxx1AezxcnfOPFNaoAlHXbxZTX7NESqd6nG4qi",
+            "action": 6,
+            "download_file_name": "V4giR50ofBsGyGCh0QF7IxjxhEJ4X"
+          }
+        }
+      ]
+    }
+  ]
+}

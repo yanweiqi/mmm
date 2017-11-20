@@ -1,0 +1,823 @@
+// Copyright 2016 Meitu Inc. All Rights Reserved.
+// 基于OpenRTB 2.4 若无特殊说明以官方文档为准
+// HTTP header:
+//   Content-Type:application/x-protobuf
+//   mtrtb-version: 1.0.0
+option cc_generic_services = true;
+option java_generic_services = true;
+option py_generic_services = true;
+option java_outer_classname = "MeituOpenRtb";
+package com.meitu.openrtb;
+
+message BidRequest {
+    required string id = 1;
+
+    repeated Imp imp = 2;
+
+    optional App app = 3;
+
+    optional Device device = 4;
+
+    optional User user = 5;
+
+    optional AuctionType at = 6 [default = SECOND_PRICE];
+
+    // 最大时间限制, 毫秒
+    optional int32 tmax = 7;
+
+    // 买方白名单
+    repeated string wseat = 8;
+
+    // 是否为当前环境全部展示机会, 1 => 是, 0 => 否
+    optional bool allimps = 9 [default = false];
+
+    // 允许交易的货币, 使用ISO-4217 alpha编码
+    repeated string cur = 10;
+
+    // 禁止的广告主类别
+    repeated ContentCategory bcat = 11;
+
+    // 禁止的广告主域名
+    repeated string badv = 12;
+
+    // 禁止的App. Android: 包名; iOS: ID.
+    repeated string bapp = 13;
+
+    // 1 => 测试请求, 0 => 非测试请求
+    optional bool test = 14 [default = false];
+
+    extensions 100 to 9999;
+
+    message Imp {
+        required string id = 1;
+
+        optional Banner banner = 2;
+
+        // 负责渲染广告的ad mediation，SDK或者播放器的名称
+        optional string displaymanager = 3;
+
+        // 负责渲染广告的ad mediation，SDK或者播放器的版本
+        optional string displaymanagerver = 4;
+
+        // 1 => 当前广告是插屏或全屏， 0 => 非插屏
+        optional bool instl = 5;
+
+        // 广告位ID
+        optional string tagid = 6;
+
+        // 底价, 单位: 分(人民币)/千次展示
+        optional double bidfloor = 7 [default = 0];
+
+        // 货币, 使用ISO-4217 alpha编码
+        optional string bidfloorcur = 8 [default = "CNY"];
+
+        // App中点击创意后使用的浏览器, 0 => 内嵌式, 1 => native.
+        optional bool clickbrowser = 9;
+
+        // 是否对创意要求HTTPS连接, 1 => 要求HTTPS连接, 0 => 不要求
+        optional bool secure = 10;
+
+        // 支持的iframe buster
+        repeated string iframebuster = 11;
+
+        optional Pmp pmp = 12;
+
+        optional Native native = 13;
+
+        // 竞价到展示的时间, 秒
+        optional int32 exp = 14;
+
+        extensions 100 to 9999;
+
+        message Banner {
+            // banner确切的宽
+            optional int32 w = 1;
+            // banner确切的高
+            optional int32 h = 2;
+
+            // banner可接受的宽高组合
+            repeated Format format = 11;
+
+            optional string id = 3;
+
+            optional AdPosition pos = 4;
+
+            // 禁止的banner类别
+            repeated BannerAdType btype = 5 [packed = true];
+
+            // 禁止的创意属性
+            repeated CreativeAttribute battr = 6 [packed = true];
+
+            // MIME类别白名单, 如"image/jpg", "image/gif",
+            // "application/x-shockwave-flash".
+            repeated string mimes = 7;
+
+            // 1 => 是topframe, 0 => 不是topframe
+            optional bool topframe = 8;
+
+            // banner可扩展的方向
+            repeated ExpandableDirection expdir = 9 [packed = true];
+
+            repeated APIFramework api = 10 [packed = true];
+
+            extensions 100 to 9999;
+
+            message Format {
+                optional int32 w = 1;
+
+                optional int32 h = 2;
+
+                extensions 100 to 9999;
+            }
+        }
+
+        message Native {
+            oneof request_oneof {
+                string request = 1;
+
+                NativeRequest request_native = 6;
+            }
+
+            // OpenRTB中native广告协议版本号
+            // "1.0" 对应 OpenRTB 2.3; "1.1" 对应 OpenRTB 2.4
+            optional string ver = 2;
+
+            // 支持的API框架
+            repeated APIFramework api = 3 [packed = true];
+
+            // 禁止的创意属性
+            repeated CreativeAttribute battr = 4 [packed = true];
+
+            extensions 100 to 9999;
+        }
+
+        message Pmp {
+            // Deal对象可得性, 0 => 所有bid均可得, 1 => bid由deal限定
+            optional bool private_auction = 1 [default = false];
+
+            repeated Deal deals = 2;
+
+            extensions 100 to 9999;
+
+            message Deal {
+                required string id = 1;
+
+                // 底价, 单位: 分(人民币)/千次展示
+                optional double bidfloor = 2 [default = 0];
+
+                // 货币, 使用ISO-4217 alpha代码.
+                optional string bidfloorcur = 3 [default = "CNY"];
+
+                // 买方白名单
+                repeated string wseat = 4;
+
+                // 广告主domain白名单
+                repeated string wadomain = 5;
+
+                optional AuctionType at = 6;
+
+                extensions 100 to 9999;
+            }
+        }
+    }
+
+    message App {
+        optional string id = 1;
+
+        optional string name = 2;
+
+        // app官网的域名
+        optional string domain = 3;
+
+        // App类别
+        repeated ContentCategory cat = 4;
+
+        // App中当前区段类别
+        repeated ContentCategory sectioncat = 5;
+
+        // App中当前页面类别
+        repeated ContentCategory pagecat = 6;
+
+        optional string ver = 7;
+
+        // Android: 包名; iOS: ID.
+        optional string bundle = 8;
+
+        // 该App是否有隐私策略, 1 => 有隐私策略, 0 => 没有
+        optional bool privacypolicy = 9;
+
+        // 是否付费App, 1 => 付费, 0 => 免费
+        optional bool paid = 10;
+
+        optional string keywords = 12;
+
+        optional string storeurl = 13;
+
+        extensions 100 to 9999;
+    }
+
+    message Device {
+        // 1 => 开启了do not track, 0 => 未设置或未开启do not track
+        optional bool dnt = 1;
+
+        optional string ua = 2;
+
+        optional string ip = 3;
+
+        optional Geo geo = 4;
+
+        // SHA1加密的硬件设备ID(IMEI), 字母采用小写形式
+        optional string didsha1 = 5;
+
+        // MD5加密的硬件设备ID(IMEI), 字母采用小写形式
+        optional string didmd5 = 6;
+
+        // SHA1加密的平台设备ID(Android ID), 字母采用小写形式
+        optional string dpidsha1 = 7;
+
+        // MD5加密的平台设备ID(Android ID), 字母采用小写形式
+        optional string dpidmd5 = 8;
+
+        optional string ipv6 = 9;
+
+        // 使用 MCC_MNC. 参考:
+        // http://en.wikipedia.org/wiki/Mobile_Network_Code
+        optional string carrier = 10;
+
+        // 浏览器语言, ISO-639-1-alpha-2.
+        optional string language = 11;
+
+        // 设备厂商 ("Apple").
+        optional string make = 12;
+
+        // 设备模型 ("iPhone").
+        optional string model = 13;
+
+        // 设备操作系统 ("iOS", "android")
+        optional string os = 14;
+
+        // 设备操作系统版本号
+        optional string osv = 15;
+
+        // 设备硬件版本 ("5S" 对应 iPhone 5S)
+        optional string hwv = 24;
+
+        // 设备的宽的物理像素数
+        optional int32 w = 25;
+
+        // 设备的高的物理像素数
+        optional int32 h = 26;
+
+        // 屏幕分辨率, pixels per linear inch.
+        optional int32 ppi = 27;
+
+        // 物理像素与独立像素的比值
+        optional double pxratio = 28;
+
+        // 是否支持JavaScript, 1 => 支持, 0 => 不支持
+        optional bool js = 16;
+
+        // 对于banner中的JS代码, 是否地理位置API可用, 1 => 是, 0 => 否
+        optional bool geofetch = 29;
+
+        optional ConnectionType connectiontype = 17;
+
+        optional DeviceType devicetype = 18;
+
+        // 浏览器Flash版本
+        optional string flashver = 19;
+
+        // 广告用ID, Android ID明文或IDFA明文, 或者其他SDK可取得的ID, 字母采用小写形式
+        optional string ifa = 20;
+
+        // SHA1加密的MAC地址, 字母采用小写形式
+        optional string macsha1 = 21;
+
+        // MD5加密的MAC地址, 字母采用小写形式
+        optional string macmd5 = 22;
+
+        // 是否"Limit Ad Tracking", 1 => 是, 0 => 否
+        optional bool lmt = 23;
+
+        extensions 100 to 9999;
+    }
+
+    message Geo {
+        // 纬度, [-90.0, +90.0] 负数表示南方
+        optional double lat = 1;
+
+        // 经度, [-180.0, +180.0] 负数表示西方
+        optional double lon = 2;
+
+        // 国家, ISO-3166-1 Alpha-3编码
+        optional string country = 3;
+
+        // 地区, ISO-3166-2编码
+        optional string region = 4;
+
+        // 定位数据来源
+        optional LocationType type = 9;
+
+        // 位置信息精确度, 单位为米
+        optional int32 accuracy = 11;
+
+        // 距离上次位置信息修正的秒数
+        optional int32 lastfix = 12;
+
+        optional LocationService ipservice = 13;
+
+        // 当地时间与UTC相差的分钟数.
+        optional int32 utcoffset = 10;
+
+        extensions 100 to 9999;
+    }
+
+    message User {
+        optional string id = 1;
+
+        // 出生年份
+        optional int32 yob = 3;
+
+        // M: 男, F: 女, O: 其他, 不填表示未知
+        optional string gender = 4;
+
+        // 以逗号分割的关键词, 兴趣或内容
+        optional string keywords = 5;
+
+        optional Geo geo = 7;
+
+        extensions 100 to 9999;
+    }
+}
+
+message BidResponse {
+    // bid request的ID
+    required string id = 1;
+
+    repeated SeatBid seatbid = 2;
+
+    // 买方bid ID, 用以记录/跟踪
+    optional string bidid = 3;
+
+    // 货币, 使用ISO-4217 alpha 代码.
+    optional string cur = 4;
+
+    optional NoBidReason nbr = 6;
+
+    extensions 100 to 9999;
+
+    message SeatBid {
+        repeated Bid bid = 1;
+
+        // 买方(广告主、代理)ID
+        optional string seat = 2;
+
+        // 是否整批购买, 1 => 是, 0 => 否
+        optional bool group = 3 [default = false];
+
+        extensions 100 to 9999;
+
+        message Bid {
+            // 买方生成的ID, 用以记录/跟踪
+            required string id = 1;
+
+            // bid request中对应的imp
+            required string impid = 2;
+
+            // 出价, 单位: 分(人民币)/千次展示
+            required double price = 3;
+
+            optional string adid = 4;
+
+            // Win notice URL
+            // 价格宏%%WINNING_PRICE%%可在nurl中使用，其含义为加密后的竞拍成交价格，单位: 分（人民币）/ 千次展示
+            optional string nurl = 5;
+
+            // 推荐使用 adm_native, 暂不支持 adm
+            // 广告展示内容, 若未填充则:
+            //   曝光监测url取值为素材审核接口中的imp_track_urls,
+            //   点击监测url取值为素材审核接口中的clk_through_url
+            oneof adm_oneof {
+                // 点击宏%%CLICK_URL%%可在adm中使用,
+                // 优先取值为实时响应返回的clk_through_url, 若响应中无对应值则取素材审核接口中的clk_through_url
+                string adm = 6;
+
+                NativeResponse adm_native = 50;
+            }
+
+            // 广告主domain
+            repeated string adomain = 7;
+
+            // Android: 包名; iOS: ID.
+            optional string bundle = 14;
+
+            // 用于审核备案的素材url
+            optional string iurl = 8;
+
+            // Campaign ID
+            optional string cid = 9;
+
+            // 创意ID
+            optional string crid = 10;
+
+            // 创意的类别
+            repeated ContentCategory cat = 15;
+
+            // 创意的属性
+            repeated CreativeAttribute attr = 11 [packed = true];
+
+            optional APIFramework api = 18;
+
+            optional string dealid = 13;
+
+            optional int32 w = 16;
+            optional int32 h = 17;
+
+            // 价格宏%%WINNING_PRICE%%可在imp_track_urls中使用，其含义为加密后的竞拍成交价格，单位: 分（人民币）/ 千次展示
+            repeated string imp_track_urls = 19;
+            optional string clk_through_url = 20;
+            // 买方愿意等待的从竞拍到实际展示的间隔秒数
+            optional int32 exp = 21;
+
+            extensions 100 to 9999;
+        }
+    }
+}
+
+message NativeRequest {
+    // OpenRTB中native广告协议版本号
+    // "1.0" 对应 OpenRTB 2.3; "1.1" 对应 OpenRTB 2.4
+    optional string ver = 1;
+
+    optional LayoutId layout = 2;
+
+    optional AdUnitId adunit = 3;
+
+    optional ContextType context = 7;
+
+    optional ContextSubtype contextsubtype = 8;
+
+    optional PlacementType plcmttype = 9;
+
+    // Layout中广告单元数量
+    optional int32 plcmtcnt = 4 [default = 1];
+
+    optional int32 seq = 5 [default = 0];
+
+    repeated Asset assets = 6;
+
+    extensions 100 to 9999;
+
+    message Asset {
+        required int32 id = 1;
+
+        // 1 => 必需, 0 => 非必需
+        optional bool required = 2 [default = false];
+
+        oneof asset_oneof {
+            Title title = 3;
+
+            Image img = 4;
+
+            Data data = 6;
+        }
+
+        extensions 100 to 9999;
+
+        message Title {
+            // 标题最大长度
+            // 推荐长度: 25, 90, 140.
+            required int32 len = 1;
+
+            extensions 100 to 9999;
+        }
+
+        message Image {
+            optional ImageAssetType type = 1;
+
+            optional int32 w = 2;
+
+            optional int32 h = 3;
+
+            optional int32 wmin = 4;
+            optional int32 hmin = 5;
+
+            repeated string mimes = 6;
+
+            extensions 100 to 9999;
+        }
+
+        message Data {
+            required DataAssetType type = 1;
+
+            optional int32 len = 2;
+
+            extensions 100 to 9999;
+        }
+    }
+}
+message NativeResponse {
+    // OpenRTB中native广告协议版本号
+    // "1.0" 对应 OpenRTB 2.3; "1.1" 对应 OpenRTB 2.4
+    optional string ver = 1;
+
+    repeated Asset assets = 2;
+
+    required Link link = 3;
+
+    repeated string imptrackers = 4;
+
+    optional string jstracker = 5;
+
+    // Extensions.
+    extensions 100 to 9999;
+
+    message Link {
+        optional string url = 1;
+
+        repeated string clicktrackers = 2;
+
+        optional string fallback = 3;
+
+        extensions 100 to 9999;
+    }
+
+    message Asset {
+        required int32 id = 1;
+
+        // 1 => 必需, 0 => 非必需
+        optional bool required = 2 [default = false];
+
+        oneof asset_oneof {
+            Title title = 3;
+
+            Image img = 4;
+
+            Data data = 6;
+        }
+
+        optional Link link = 7;
+
+        extensions 100 to 9999;
+
+        message Title {
+            required string text = 1;
+
+            extensions 100 to 9999;
+        }
+
+        message Image {
+            required string url = 1;
+
+            optional int32 w = 2;
+            optional int32 h = 3;
+
+            extensions 100 to 9999;
+        }
+
+        message Data {
+            optional string label = 1;
+            required string value = 2;
+            extensions 100 to 9999;
+        }
+    }
+}
+
+enum ContentCategory {
+    CATE001 = 1; // 网络游戏
+    CATE002 = 2; // 服饰
+    CATE003 = 3; // 日化
+    CATE004 = 4; // 网络服务
+    CATE005 = 5; // 个人用品
+    CATE006 = 6; // 零售及服务
+    CATE007 = 7; // 娱乐消闲
+    CATE008 = 8; // 教育出国
+    CATE009 = 9; // 家具装饰
+    CATE010 = 10; // 食品饮料
+    CATE011 = 11; // 交通
+    CATE012 = 12; // IT 产品
+    CATE013 = 13; // 消费电子
+    CATE014 = 14; // 医疗服务
+    CATE015 = 15; // 金融服务
+    CATE016 = 16; // 信息通讯(运营商)
+    CATE017 = 17; // 房地产
+    CATE018 = 18; // 其他
+
+}
+
+enum AuctionType {
+    FIRST_PRICE = 1;
+
+    SECOND_PRICE = 2;
+
+    FIXED_PRICE = 3;
+}
+
+enum BannerAdType {
+    XHTML_TEXT_AD = 1;
+    XHTML_BANNER_AD = 2;
+    JAVASCRIPT_AD = 3;
+    IFRAME = 4;
+}
+
+enum CreativeAttribute {
+    AUDIO_AUTO_PLAY = 1;
+    AUDIO_USER_INITIATED = 2;
+    EXPANDABLE_AUTOMATIC = 3;
+    EXPANDABLE_CLICK_INITIATED = 4;
+
+    EXPANDABLE_ROLLOVER_INITIATED = 5;
+
+    VIDEO_IN_BANNER_AUTO_PLAY = 6;
+
+    VIDEO_IN_BANNER_USER_INITIATED = 7;
+
+    POP = 8;
+    PROVOCATIVE_OR_SUGGESTIVE = 9;
+
+    ANNOYING = 10;
+
+    SURVEYS = 11;
+    TEXT_ONLY = 12;
+    USER_INTERACTIVE = 13;
+
+    WINDOWS_DIALOG_OR_ALERT_STYLE = 14;
+    HAS_AUDIO_ON_OFF_BUTTON = 15;
+    AD_CAN_BE_SKIPPED = 16;
+
+    FLASH = 17;
+}
+
+enum APIFramework {
+    VPAID_1 = 1;
+
+    VPAID_2 = 2;
+
+    MRAID_1 = 3;
+
+    ORMMA = 4;
+
+    MRAID_2 = 5;
+};
+
+enum AdPosition {
+    UNKNOWN = 0;
+
+    ABOVE_THE_FOLD = 1;
+
+    BELOW_THE_FOLD = 3;
+
+    HEADER = 4;
+
+    FOOTER = 5;
+
+    SIDEBAR = 6;
+
+    AD_POSITION_FULLSCREEN = 7;
+}
+
+enum ConnectionType {
+    CONNECTION_UNKNOWN = 0;
+    ETHERNET = 1;
+    WIFI = 2;
+    CELL_UNKNOWN = 3;
+    CELL_2G = 4;
+    CELL_3G = 5;
+    CELL_4G = 6;
+}
+
+enum ExpandableDirection {
+    LEFT = 1;
+
+    RIGHT = 2;
+
+    UP = 3;
+
+    DOWN = 4;
+
+    EXPANDABLE_FULLSCREEN = 5;
+}
+
+enum LocationType {
+    GPS_LOCATION = 1;
+    IP = 2;
+    USER_PROVIDED = 3;
+}
+
+enum LocationService {
+    IP2LOCATION = 1;
+    NEUSTAR = 2;
+    MAXMIND = 3;
+    NETAQUITY = 4;
+}
+
+enum DeviceType {
+    // 手机 或 tablet.
+    MOBILE = 1;
+
+    PERSONAL_COMPUTER = 2;
+
+    CONNECTED_TV = 3;
+
+    HIGHEND_PHONE = 4;
+
+    TABLET = 5;
+
+    CONNECTED_DEVICE = 6;
+
+    SET_TOP_BOX = 7;
+}
+
+enum NoBidReason {
+    UNKNOWN_ERROR = 0;
+    TECHNICAL_ERROR = 1;
+    INVALID_REQUEST = 2;
+    KNOWN_WEB_SPIDER = 3;
+    SUSPECTED_NONHUMAN_TRAFFIC = 4;
+    CLOUD_DATACENTER_PROXYIP = 5;
+    UNSUPPORTED_DEVICE = 6;
+    BLOCKED_PUBLISHER = 7;
+    UNMATCHED_USER = 8;
+}
+
+enum LayoutId {
+    CONTENT_WALL = 1;
+    APP_WALL = 2;
+    NEWS_FEED = 3;
+    CHAT_LIST = 4;
+    CAROUSEL = 5;
+    CONTENT_STREAM = 6;
+    GRID = 7;
+}
+
+enum AdUnitId {
+    PAID_SEARCH_UNIT = 1;
+    RECOMMENDATION_WIDGET = 2;
+    PROMOTED_LISTING = 3;
+    IAB_IN_AD_NATIVE = 4;
+    ADUNITID_CUSTOM = 5;
+}
+
+enum ContextType {
+    CONTENT = 1;
+    SOCIAL = 2;
+    PRODUCT = 3;
+}
+
+enum ContextSubtype {
+    CONTENT_GENERAL_OR_MIXED = 10;
+    CONTENT_ARTICLE = 11;
+    CONTENT_VIDEO = 12;
+    CONTENT_AUDIO = 13;
+    CONTENT_IMAGE = 14;
+    CONTENT_USER_GENERATED = 15;
+
+    SOCIAL_GENERAL = 20;
+    SOCIAL_EMAIL = 21;
+    SOCIAL_CHAT_IM = 22;
+
+    PRODUCT_SELLING = 30;
+    PRODUCT_MARKETPLACE = 31;
+    PRODUCT_REVIEW = 32;
+}
+
+enum PlacementType {
+    IN_FEED = 1;
+    ATOMIC_UNIT = 2;
+    OUTSIDE = 3;
+    RECOMMENDATION = 4;
+}
+
+enum DataAssetType {
+    SPONSORED = 1;
+
+    DESC = 2;
+
+    RATING = 3;
+
+    LIKES = 4;
+
+    DOWNLOADS = 5;
+
+    PRICE = 6;
+
+    SALEPRICE = 7;
+
+    PHONE = 8;
+
+    ADDRESS = 9;
+
+    DESC2 = 10;
+
+    DISPLAYURL = 11;
+
+    CTATEXT = 12;
+}
+
+enum ImageAssetType {
+    ICON = 1;
+
+    LOGO = 2;
+
+    MAIN = 3;
+}

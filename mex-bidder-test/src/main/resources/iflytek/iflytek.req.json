@@ -1,0 +1,36 @@
+{
+  "id": "c9f323bf-b87b-4aa1-8bdd-6262d8c9539b",
+  "imp": [
+    {
+      "id": "9f06a56f-2248-4834-978e-770bd5cc8ecd",
+      "banner": {
+        "type": 1,
+        "w": 640,
+        "h": 100
+      },
+      "bidfloor": 0,
+      "secure": 0,
+      "is_support_deeplink":1
+    }
+  ],
+  "device": {
+    "ip": "60.24.65.164",
+    "didmd5": "D41D8CD98F00B204E9800998ECF8427E",
+    "os": "android",
+    "osv": "8.0",
+    "ifa":"android12312",
+    "mac":"c4:66:99:79:01:54",
+    "macmd5":"2dccb32a1564152704d0245b00313014",
+    "connectiontype": 5,
+    "devicetype": 0,
+    "dpid ":"androidid123123"
+  },
+  "app": {
+    "id": "56248f74",
+    "name": "驾校一点通-android",
+    "bundle": "com.jxedt",
+    "cat": [
+      "IAB5"
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "device": {"dnt": true,
+    "ua": "Go-http-client/1.1",
+    "ip": "119.57.32.71",
+    "didsha1": "12f90785a49e0ed50f07b2baeb8110a87f096224",
+    "dpidsha1": "5fdccc24b8aa3b53cc898f5e5e77f008d235631a",
+    "make": "",
+    "model": "vivo X7",
+    "os": "android",
+    "osv": "5.1.1",
+    "w": 1080,
+    "h": 1920,
+    "ppi": 480,
+    "connectiontype": 2,
+    "devicetype": 4,
+    "macsha1": "a47b043fb30cab96a6d90f66e6276a283c7599b3",
+    "ext": {
+      "plmn": "46000",
+      "imei": "5a3e1024724da8bcd1da1bc58fc97061",
+      "mac": "316e8e4105097a393d5a168b06820bf5",
+      "android_id": "1e2976ae3735108d",
+      "adid": "",
+      "orientation": 1
+    }
+  },
+
+  "app": {
+    "id": "sandbox_app_id_753",
+    "name": "沙盒APP",
+    "ver": "0.0.1",
+    "bundle": "sandbox_app"
+  },
+  "id": "0cthUk1CbnuS0MO9A53gcPWX3Ea0oA",
+  "imp": [
+    {
+      "id": "1",
+      "banner": {
+        "w": 640,
+        "h": 100,
+        "pos": 0
+      },
+      "instl": false,
+      "tagid": "0",
+      "bidfloor": 1,
+      "bidfloorcur": "CNY",
+      "ext": {
+        "inventory_types": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    }
+  ],
+
+
+  "ext": {
+    "need_https":1,
+    "version": 1
+  }
+}

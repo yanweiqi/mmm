@@ -1,0 +1,62 @@
+{
+  "app": {
+    "ext": {
+      "appsecret": "",
+      "appkey": ""
+    },
+    "ver": "4.9.2",
+    "storeurl": "https://itunes.apple.com/us/app/hou-gong-ru-yi-chuan/id543483437?l=zh&ls=1&mt=8",
+    "cat": [
+      10801
+    ],
+    "name": "如懿传",
+    "paid": 0,
+    "id": "88efda961a1f283c8e93895d76bd3705",
+    "bundle": "com.chancky.RuYiZhuan"
+  },
+  "at": 1,
+  "id": "test12312",
+  "imp": [
+    {
+      "tagid": "",
+      "banner": {
+        "pos": 1,
+        "w": 728,
+        "h": 90
+      },
+      "bidfloor": 10000,
+      "bidfloorcur": "RMB",
+      "id": "20170704-115458_reqimp_138-1152-ro2v-759",
+      "instl": 0
+    }
+  ],
+  "device": {
+    "ext": {
+      "idfa": "CED83836-FF5E-4248-B1F8-31A6AC7126AF"
+    },
+    "orientation": 0,
+    "os": "iOS",
+    "sw": 768,
+    "ifa": "CED83836-FF5E-4248-B1F8-31A6AC7126AF",
+    "ip": "101.81.92.47",
+    "idfa": "CED83836-FF5E-4248-B1F8-31A6AC7126AF",
+    "js": 1,
+    "language": "zh",
+    "ua": "Mozilla/5.0(iPad;CPUOS10_3_2likeMacOSX)AppleWebKit/603.2.4(KHTML,likeGecko)Mobile/14F89",
+    "devicetype": 3,
+    "geo": {
+      "country": "CHN"
+    },
+    "carrier": "",
+    "osv": "10.3.2",
+    "dpidmd5": "e5c6a46263a46fed1aa11268c05b4d7e",
+    "sh": 1024,
+    "model": "iPad",
+    "connectiontype": 2,
+    "make": "Apple",
+    "dpidsha1": "f4a581dfa91bc2a75e61741f0565ce77e1c91bb4"
+  },
+  "user": {
+    "gender": "Null"
+  }
+}

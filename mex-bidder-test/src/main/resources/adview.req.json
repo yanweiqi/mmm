@@ -1,0 +1,52 @@
+{
+  "id": "--",
+  "at": 2,
+  "app": {
+    "id": "9d66d9249cc5bd549b0e68b9fedc69a7",
+    "paid": 0,
+    "cat": [
+      10505
+    ],
+    "storeurl": "https://itunes.apple.com/cn/app/id902345501?l=zh&mt=8",
+    "name": "App Name",
+    "bundle": "yourcompany.com.app",
+    "ver": "1.2"
+  },
+  "imp": [
+    {
+      "id": "5cdef32a55397c48b8baeb3cee0c5b5c",
+      "bidfloor": 6000,
+      "instl": 0,
+      "bidfloorcur": "RMB",
+      "banner": {
+        "w": 640,
+        "h": 100,
+        "pos": 1
+      }
+    }
+  ],
+  "device": {
+    "devicetype":2,
+    "os": "iOS",
+    "model": "iPhone5,1",
+    "geo": {
+      "lon": 116.4736795,
+      "type": 1,
+      "lat": 39.9960702
+    },
+    "osv": "7.0.6",
+    "js": 1,
+    "dnt": 0,
+    "sh": 1024,
+    "ip": "119.57.32.71",
+    "s_density": 2,
+    "connectiontype": 2,
+    "dpidsha1": "7c222fb2927d828af22f592134e8932480637c0d",
+    "ua": "Mozilla/5.0 (iPhone",
+    "carrier": "46000",
+    "language": "zh",
+    "make": "Apple",
+    "sw": 768
+  },
+  "user": {}
+}

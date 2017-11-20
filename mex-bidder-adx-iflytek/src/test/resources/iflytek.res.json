@@ -1,0 +1,33 @@
+{
+  "id": "f0ec439aac8e9eb5a4c151aba5b18ebb",
+  "seatbid": [
+    {
+      "seat": "359",
+      "bid": [
+        {
+          "id" : "1",
+          "impid": "5cdef32a55397c48b8baeb3cee0c5b5c",
+          "price": 12000,
+          "adid": "1326",
+          "wurl": "http://dsp.example.com/winnotice?price=%%WIN_PRICE%%",
+          "nurl": {
+            "0": [
+              "url1",
+              "url2"
+            ]
+          },
+          "admt": 4,
+          "curl": [
+            "http://dsp1.com/adclick?id=123398923"
+          ],
+          "crid": "2376",
+          "adm": "<meta http-equiv='Content-Type'>",
+          "adh": 50,
+          "adw": 320,
+          "cid": "15238",
+          "adct": 1
+        }
+      ]
+    }
+  ]
+}

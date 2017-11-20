@@ -1,0 +1,25 @@
+{
+	"id": "d0f69854-86dd-40ca-9b40-94c5f9f939ee-1484637950860",
+	"bidid": "22491ee9-72b1-4796-8549-8907c11b512d-1484638076964",
+	"seatbid": [{
+		"bid": [{
+			"impid": "f8d856d0-d37b-431e-ace8-9b27a9ac2a1c",
+			"price": 4.0,
+			"nurl": "https://192.168.59.19:8081/ad/win?sid=22491ee9-72b1-4796-8549-8907c11b512d-1484638076964&ei=RS26OFN3kLERkIp_ZpWwEIMyeRP9a-PyxGHODrJgCg5SrJxqw8nJqW1AP1jlQsbIDtiwcilhnSXEmANWzFzDxrWe2Pey7aWXZnwToi_f-5TcJfa2GV41yRT8lckYhWWjyA2ftv2O3-DfTi6nQ71oxuhyCcznhMZzQgeVK9YuwtSMCw-3naZRwPebuw7tUsa4dQF6kprHC-Ue8-LN6E0WQIszxN6kZ1eOJxX048DVyE8&ev=1.0&did=4eec4af1-b38f-4583-92a2-9ca36f265071&ap=${AUCTION_PRICE}",
+			"native_ad": {
+				"title": "title3",
+				"landing": "http://tgnome.voicecloud.cn:3002/jingjia3",
+				"imptrackers": ["https://192.168.59.19:9091/ad/impress?sid=22491ee9-72b1-4796-8549-8907c11b512d-1484638076964&ei=RS26OFN3kLERkIp_ZpWwEIMyeRP9a-PyxGHODrJgCg5SrJxqw8nJqW1AP1jlQsbIDtiwcilhnSXEmANWzFzDxtefspPwiqsMmxzu6xw3kg4_iqH7YE9o1NUJPu9fvUrmOzU-2RmK5EDSo274XguLWU4-8ZmC8lsb8hLvFKeZ54650QTZ6B_JvfkAXVpKZiapEa6DR62LzicYHIhz3JPt9qnPuuOAb4XzDmuSAWyWGDMUBPRJucQHIFRPqp_h0lbwj1CvCYulioKc3kyfw-jjbyW2ZK6IiQELrJzrFVdU6N9WeHGXB_plHo3zv6Syyp4CocwkN7PUel_KG9QpWiZKOeXzWTGxLez1lLWsP6EGT2jGZYGV9I-KMNSAWF6bNsPA-7i_Z70fpxYH9uDLvKae9uGeAf7lzjKG6QbGqnoZakU&ev=1.0&did=4eec4af1-b38f-4583-92a2-9ca36f265071&auc_price=${AUCTION_PRICE}",
+				"http://tgnome.voicecloud.cn:3002/"],
+				"clicktrackers": ["https://192.168.59.19:9091/ad/click?sid=22491ee9-72b1-4796-8549-8907c11b512d-1484638076964&ei=RS26OFN3kLERkIp_ZpWwEIMyeRP9a-PyxGHODrJgCg5SrJxqw8nJqW1AP1jlQsbIDtiwcilhnSXEmANWzFzDxtefspPwiqsMmxzu6xw3kg4_iqH7YE9o1NUJPu9fvUrmOzU-2RmK5EDSo274XguLWU4-8ZmC8lsb8hLvFKeZ54650QTZ6B_JvfkAXVpKZiapEa6DR62LzicYHIhz3JPt9qnPuuOAb4XzDmuSAWyWGDMUBPRJucQHIFRPqp_h0lbwj1CvCYulioKc3kyfw-jjbyW2ZK6IiQELrJzrFVdU6N9WeHGXB_plHo3zv6Syyp4CocwkN7PUel_KG9QpWiZKOeXzWTGxLez1lLWsP6EGT2jKplBYwiBpuPk3s-MxxOw7&ev=1.0&did=4eec4af1-b38f-4583-92a2-9ca36f265071",
+				"http://tgnome.voicecloud.cn:3002/"],
+				"img_urls": ["https://bj.openstorage.cn/v1/iflyad/pmp/4acf9ebf768ed95f4f13f250d9bb7dcf.jpeg",
+				"https://bj.openstorage.cn/v1/iflyad/pmp/4acf9ebf768ed95f4f13f250d9bb7dcf.jpeg",
+				"https://bj.openstorage.cn/v1/iflyad/pmp/4acf9ebf768ed95f4f13f250d9bb7dcf.jpeg"],
+				"is_marked": 0
+			},
+			"lattr": 1
+		}]
+	}],
+	"cur": "CNY"
+}

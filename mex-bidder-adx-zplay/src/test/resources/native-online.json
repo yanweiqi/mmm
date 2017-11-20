@@ -1,0 +1,103 @@
+{
+  "id": "0btcaN1D7HrT3VB7jY2sHYfd230SZy",
+  "imp": [
+    {
+      "id": "1",
+      "banner": {
+        "w": 50,
+        "h": 50,
+        "pos": 4
+      },
+      "tagid": "zap553631d2b3542c930394cbe0bffbdacdca769cdc",
+      "bidfloor": 1,
+      "bidfloorcur": "CNY",
+      "native": {
+        "RequestOneof": {
+          "RequestNative": {
+            "layout": 6,
+            "assets": [
+              {
+                "id": 1,
+                "required": true,
+                "AssetOneof": {
+                  "Img": {
+                    "type": 3,
+                    "w": 640,
+                    "h": 320
+                  }
+                }
+              },
+              {
+                "id": 2,
+                "required": true,
+                "AssetOneof": {
+                  "Title": {
+                    "len": 70
+                  }
+                }
+              },
+              {
+                "id": 3,
+                "required": true,
+                "AssetOneof": {
+                  "Data": {
+                    "type": 2,
+                    "len": 180
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "ext": {
+        "inventory_types": [
+          6
+        ]
+      }
+    }
+  ],
+  "app": {
+    "id": "1008093",
+    "name": "百合婚恋",
+    "ver": "",
+    "bundle": "com.baihe"
+  },
+  "device": {
+    "dnt": false,
+    "ua": "Mozilla/5.0(Linux;Android7.0;HUAWEINXT-AL10Build/HUAWEINXT-AL10;wv)AppleWebKit/537.36(KHTML,likeGecko)Version/4.0Chrome/55.0.2883.91MobileSafari/537.36",
+    "ip": "117.136.38.154",
+    "geo": {
+      "country": "CHN",
+      "region": "北京",
+      "city": "北京",
+      "type": 2
+    },
+    "didsha1": "0132a2a8f610da538ec18112d00ab07f61c58ad3",
+    "dpidsha1": "b24c1fadd64ef7e5f69c9e65f6e338cb9291b18b",
+    "make": "HUAWEI",
+    "model": "HUAWEINXT-AL10",
+    "os": "ios",
+    "osv": "6.0",
+    "w": 1080,
+    "h": 1812,
+    "ppi": 3,
+    "pxratio": 3,
+    "connectiontype": 6,
+    "devicetype": 5,
+    "macsha1": "c46b5aafb49b48bab3f63ff4587cedb084aa5fd6",
+    "ext": {
+      "plmn": "46000",
+      "imei": "860797039348099",
+      "imsi": "",
+      "mac": "dc:09:4c:43:12:3c",
+      "android_id": "43bb2e723700438b",
+      "adid": "",
+      "orientation": 1
+    }
+  },
+  "ext": {
+    "version": 1,
+    "need_https": false
+  }
+}

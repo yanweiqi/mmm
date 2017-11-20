@@ -1,0 +1,94 @@
+{
+  "app": {
+    "ext": {
+      "appsecret": "",
+      "appkey": ""
+    },
+    "ver": "6.5.2",
+    "cat": [
+      10502
+    ],
+    "name": "MOMO",
+    "paid": 0,
+    "id": "f56a571271e190053238d72c77102da1",
+    "bundle": ""
+  },
+  "at": 0,
+  "id": "20160408-165435_bidreq_165-3960-NwVU-1886",
+  "imp": [
+    {
+      "native": {
+        "request": {
+          "layout": 6,
+          "assets": [
+            {
+              "img": {
+                "w": 500,
+                "h": 300,
+                "hmin": 0,
+                "wmin": 0,
+                "type": 3,
+                "mimes": [
+                  "image\/png"
+                ]
+              },
+              "id": 1,
+              "required": 1
+            },
+            {
+              "id": 2,
+              "title": {
+                "len": 10
+              },
+              "required": 1
+            },
+            {
+              "data": {
+                "len": 20,
+                "type": 2
+              },
+              "id": 3,
+              "required": 1
+            },
+            {"required":1,"id":4,"img":{"mimes":["image/png"],"hmin":0,"h":250,"w":250,"wmin":0,"type":3}},
+            {"required":1,"id":5,"img":{"mimes":["image/png"],"hmin":0,"h":250,"w":250,"wmin":0,"type":3}},
+            {"required":1,"id":6,"img":{"mimes":["image/png"],"hmin":0,"h":250,"w":250,"wmin":0,"type":3}}
+          ],
+          "adunit": 4
+        },
+        "ver": "1.0"
+      },
+      "tagid": "7nb8jn1rc2t2",
+      "bidfloor": 6,
+      "bidfloorcur": "RMB",
+      "id": "20160408-165435_reqimp_165-3960-1JmF-1885",
+      "instl": 6
+    }
+  ],
+  "device": {
+    "orientation": 0,
+    "os": "iOS",
+    "sw": 640,
+    "ip": "115.213.86.30",
+    "js": 1,
+    "language": "zh",
+    "ua": "Mozilla\/5.0 (iPhone; CPU iPhone OS 7_1 like Mac OS X) AppleWebKit\/537.51.2 (KHTML, like Gecko) Mobile\/11D167",
+    "devicetype": 1,
+    "geo": {
+      "lon": 121.37971234972,
+      "type": 1,
+      "lat": 30.020019498737
+    },
+    "carrier": "",
+    "osv": "8.4",
+    "sh": 1136,
+    "model": "iphone",
+    "connectiontype": 2,
+    "make": "Apple",
+    "dpidsha1": "fad42f1743e02bfa55de9ed717d36afa09a4b866"
+  },
+  "user": {
+
+  }
+}
+

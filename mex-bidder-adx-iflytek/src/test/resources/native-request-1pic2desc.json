@@ -1,0 +1,35 @@
+{
+  "id": "test123",
+  "imp": [
+    {
+      "is_support_deeplink":1,
+      "id": "9f06a56f-2248-4834-978e-770bd5cc8ecd",
+      "native": {
+        "title": {
+          "len": 50
+        },
+        "desc": {
+          "len": 100
+        },
+        "img": {
+          "w": 480,
+          "h": 320
+        }
+      },
+      "instl": 8,
+      "bidfloor": 0.01
+    }
+  ],
+  "device": {
+    "ip": "60.247.65.164",
+    "didmd5": "D41D8CD98F00B204E9800998ECF8427E",
+    "os": "android",
+    "osv": "4.4.4",
+    "secure": 1,
+    "connectiontype": 2,
+    "geo":{
+      "lat":40.265926,
+      "lon":116.27248
+    }
+  }
+}

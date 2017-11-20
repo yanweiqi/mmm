@@ -1,0 +1,8 @@
+{
+  "netid": "012",
+  "type": "proto",
+  "ischeck": false,
+  "currency": "RMB",
+  "isMuchUrl": true,
+  "priceMacro": "%%WIN_PRICE%%"
+}

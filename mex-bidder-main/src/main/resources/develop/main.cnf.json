@@ -1,0 +1,43 @@
+{
+  "bidder-instance": 1,
+  "kafka-publisher-instance": 1,
+  "bidder-port": 9080,
+  "message-redis": {
+    "host": "localhost",
+    "port": 6379,
+    "auth": "dsplocalredis"
+  },
+  "query-redis": {
+    "host": "localhost",
+    "port": 6379,
+    "auth": "dsplocalredis"
+  },
+  "kafka-cnf": {
+    "serializer.class": "org.apache.kafka.common.serialization.StringSerializer",
+    "bootstrap.servers": "localhost:9092",
+    "producer.type": "async"
+  },
+  "ip-lib": "d:\\ip-lib.csv",
+  "track-base-url": "60.205.84.68",
+  "winnotice-url": "60.205.84.68",
+  "kafka-rtb-topic": "dspx_flow",
+  "channel-cnf": {
+    "deviceId-filter": [
+      "zplay"
+    ]
+  },
+  "new-producer-topics": {
+    "bid-request-topic": "bid_request",
+    "bid-response-topic": "bid_response"
+  },
+  "dmp": {
+    "getui": {
+      "userCode":"mex",
+      "authCode":"123321",
+      "host":"115.236.68.59",
+      "port":8659,
+      "timeout":2000,
+      "maxPoolSize":20
+    }
+  }
+}

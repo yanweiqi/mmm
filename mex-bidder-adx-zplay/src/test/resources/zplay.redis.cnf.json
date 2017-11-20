@@ -1,0 +1,8 @@
+{
+  "netid": "004",
+  "type": "json",
+  "ischeck": false,
+  "currency": "RMB",
+  "isMuchUrl": true,
+  "priceMacro": "%%WIN_PRICE%%"
+}
